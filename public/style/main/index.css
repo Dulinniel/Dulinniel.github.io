@@ -1,0 +1,41 @@
+:root {
+    padding: 0;
+    margin: 0;
+    top: 0;
+    left: 0;
+}
+
+h1 {
+    color: #000000;
+    text-align: center;
+    font-family: sans-serif;
+}
+
+p {
+    text-align: center;
+    font-size: larger;
+    font-family: sans-serif;
+    font-style: italic;
+}
+
+img {
+  height: 35px;
+  width: 35px
+}
+
+.social-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 5%;
+    height: 100px;
+}
+
+
+.available:hover {
+    cursor: pointer;
+}
+
+.not-available:hover {
+    cursor: not-allowed;
+}

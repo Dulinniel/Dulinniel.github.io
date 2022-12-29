@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="fr" prefix="og:https://ogp.me/ns#" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Nervous, called nervuwus on GitHub, but i prefer Riley, i'm a lonely developer, which maintain a blog for fun">
+    <meta name="google-site-verification" content="U57ZFT6tmAG83iXj3zy4XdoRi9DHpJVLldLuUPJrURQ" />
+    <title>Riley's thingy - accueil</title>
+    <link rel="canonical" href="https://nervuwus.github.io">
+    <link rel="sitemap" href="sitemap.xml">
+    <link rel="author" href="human.txt">
+    <!-- Import Components to the file -->
+    <link rel="preload stylesheet" href="public/style/components/index.css" as="style">
+    <!-- Import Components to the file -->
+    <!-- Import proper CSS to the file -->
+    <link rel="stylesheet" href="public/style/main/index.css">
+    <link rel="stylesheet" href="public/style/main/stars.css">
+    <link rel="stylesheet" href="public/style/responsive/responsive.css">
+    <!-- Import proper CSS to the file -->
+    <!-- Allow user to add app on the screen -->
+    <meta name='mobile-web-app-capable' content='yes'>
+    <meta name='apple-mobile-web-app-capable' content='yes'>
+    <!-- Allow user to add app on the screen -->
+    <!-- Ahah yes favicon and other manifests shit PLEASE LET ME DIE -->
+    <link rel="apple-touch-icon" sizes="180x180" href="public/ressource/images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="public/ressource/images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="public/ressource/images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="mask-icon" href="public/ressource/image/favicon/safari-pinned-tab.svg" color="#BA55D3">
+    <link rel="shortcut icon" href="public/ressource/images/favicon/favicon.ico">
+    <meta name="msapplication-TileColor" content="#BA55D3">
+    <meta name="msapplication-config" content="browserconfig.xml">
+    <!-- Ahah yes favicon and other manifests shit PLEASE LET ME DIE -->
+    <!-- Add OG properties -->
+    <meta property="og:title" content="Riley's thingy">
+    <meta name="og:type" content="website">
+    <meta name="og:description" content="This is a little blog where you can find articles, reviews, projects and... random shit also it's maintaining by Riley a developer with too much free time">
+    <meta name="og:locale" content="fr_FR">
+    <meta name="theme-color" content="#DA70D6">
+    <meta name="og:url" content="https://nervuwus.github.io/">
+    <!-- Add OG properties -->
+</head>
+
+<script type="text/javascript">
+
+  function customAlert() {
+    this.alert = function (message) {
+      document.body.innerHTML += '<div id="dialogoverlay"></div><div id="dialogbox" class="slit-in-vertical"><div><div id="dialogboxbody"></div><div id="dialogboxfoot"></div></div></div>';
+
+      const dialogoverlay = document.getElementById("dialogoverlay");
+      const dialogbox = document.getElementById("dialogbox");
+      const dialogboxbody = document.getElementById("dialogboxbody");
+      const dialogboxfoot = document.getElementById("dialogboxfoot");
+
+      let winH = window.innerHeight;
+      dialogoverlay.style.height = `10px`;
+      dialogoverlay.style.display = "block";
+
+      dialogbox.style.top = '40%';
+      dialogbox.style.display = "block";
+
+      dialogboxbody.innerHTML = message;
+      dialogboxfoot.innerHTML = '<button class="accept" onclick=Alert.ok()>Yay !</button>';
+
+    }
+
+    this.ok = function () {
+      document.getElementById("dialogbox").style.display = "none";
+      document.getElementById("dialogoverlay").style.display = "none";
+    }
+  }
+
+  let Alert = new customAlert();
+
+  function copyTag() {
+    navigator.clipboard.writeText("NervUwUs Nightingale#1337");
+    Alert.alert("Mon tag Discord \"NervUwUs Nightingale#1337\", est arrivé dans ton presse-papier :D");
+  }
+</script>
+
+<body id="main">
+
+    <div class="star-1 stars"></div>
+    <div class="star-2 stars"></div>
+    <div class="star-3 stars"></div>
+    <div class="star-4 stars"></div>
+    <div class="star-5 stars"></div>
+    <h1>Nervous Nightingale</h1>
+    <p>Développeuse et rôliste avec beaucoup trop d'imagination</p>
+
+    <div class="social-container">
+        <a href="https://github.com/NervUwUs" target="_blank" rel="noreferrer"><img class="available" src="./public/ressource/images/github-svgrepo-com.svg" alt="Logo github"/></a>
+        <a href="https://www.youtube.com/channel/UCTnYbWRDhPrC_FEICHDCX7A" target="_blank" rel="noreferrer"><img class="available" src="./public/ressource/images/youtube-svgrepo-com.svg" alt="Logo youtube"/></a>
+        <a href="https://gitlab.com/NervUwUs" target="_blank" rel="noreferrer"><img class="available" src="./public/ressource/images/gitlab-svgrepo-com.svg" alt="Logo gitlab"/></a>
+        <img value="15" class="available" onclick="copyTag()" src="./public/ressource/images/discord-svgrepo-com.svg" alt="Logo Discord"/>
+    </div>
+
+    <div class="container">
+        <button id="btn" class="btn btn-left" onclick="location.href = './pages/blog.html';">
+            <span><a class="btn-link" href="./pages/blog.html">Blog</a></span>
+        </button>
+        <button id="btn" class="btn btn-right" onclick="location.href = './pages/portfolio.html';">
+            <span><a class="btn-link" href="./pages/portfolio.html">Portfolio</a></span>
+        </button>
+    </div>
+
+</body>
+
+</html>

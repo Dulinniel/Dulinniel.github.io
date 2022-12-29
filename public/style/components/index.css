@@ -1,0 +1,7 @@
+@import "button.css";
+@import "background.css";
+@import "alert.css";
+
+:root {
+    cursor: url("../../ressource/cursors/base.cur"), default;
+}

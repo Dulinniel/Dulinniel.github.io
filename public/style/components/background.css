@@ -1,0 +1,11 @@
+:root {
+    width: 100%;
+    height: 150%;
+    background: linear-gradient(black, #000099, #66c2ff, #ffcccc, #ffeee6);
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+body::--webkit-scrollbar {
+    display: none;
+}

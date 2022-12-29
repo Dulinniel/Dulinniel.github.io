@@ -1,0 +1,202 @@
+:root {
+    --gap: 35%
+}
+
+.btn {
+    width: 130px;
+    height: 40px;
+    color: #fff;
+    border-radius: 5px;
+    padding: 10px 25px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 500;
+    background: transparent;
+    cursor: /*url("../ressource/cursor/Link\ Select.cur"), pointer;*/ pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    box-shadow: inset 2px 2px 2px 0px
+    rgba(255, 255, 255, .5), 7px 7px 20px 0px
+    rgba(0, 0, 0, .1), 4px 4px 5px 0px
+    rgba(0, 0, 0, .1);
+    outline: none;
+}
+
+.btn-left {
+    position: absolute;
+    left: var(--gap);
+    background: linear-gradient(0deg, rgba(255, 151, 0, 1) 0%, rgba(251, 75, 2, 1) 100%);
+    line-height: 42px;
+    padding: 0;
+    border: none;
+}
+
+.btn-left span {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.btn-left:before,
+.btn-left:after {
+    position: absolute;
+    content: "";
+    right: 0;
+    bottom: 0;
+    background: rgba(251, 75, 2, 1);
+    box-shadow: -7px -7px 20px 0px
+    rgba(255, 255, 255, .9), -4px -4px 5px 0px
+    rgba(255, 255, 255, .9), 7px 7px 20px 0px
+    rgba(0, 0, 0, .2), 4px 4px 5px 0px
+    rgba(0, 0, 0, .3);
+    transition: all 0.3s ease;
+}
+
+.btn-left:before {
+    height: 0%;
+    width: 2px;
+}
+
+.btn-left:after {
+    width: 0%;
+    height: 2px;
+}
+
+.btn-left:hover {
+    color: rgba(251, 75, 2, 1);
+    background: transparent;
+}
+
+.btn-left:hover:before {
+    height: 100%;
+}
+
+.btn-left:hover:after {
+    width: 100%;
+}
+
+.btn-left span:before,
+.btn-left span:after {
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 0;
+    background: rgba(251, 75, 2, 1);
+    box-shadow: -7px -7px 20px 0px
+    rgba(255, 255, 255, .9), -4px -4px 5px 0px
+    rgba(255, 255, 255, .9), 7px 7px 20px 0px
+    rgba(0, 0, 0, .2), 4px 4px 5px 0px
+    rgba(0, 0, 0, .3);
+    transition: all 0.3s ease;
+}
+
+.btn-left span:before {
+    width: 2px;
+    height: 0%;
+}
+
+.btn-left span:after {
+    height: 2px;
+    width: 0;
+}
+
+.btn-left span:hover:before {
+    height: 100%;
+}
+
+.btn-left span:hover:after {
+    width: 100%;
+}
+
+.btn-right {
+    position: absolute;
+    right: var(--gap);
+    background: linear-gradient(0deg, rgba(255, 151, 0, 1) 0%, rgba(251, 75, 2, 1) 100%);
+    line-height: 42px;
+    padding: 0;
+    border: none;
+}
+
+.btn-right span {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.btn-right:before,
+.btn-right:after {
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: 0;
+    background: rgba(251, 75, 2, 1);
+    box-shadow: -7px -7px 20px 0px
+    rgba(255, 255, 255, .9), -4px -4px 5px 0px
+    rgba(255, 255, 255, .9), 7px 7px 20px 0px
+    rgba(0, 0, 0, .2), 4px 4px 5px 0px
+    rgba(0, 0, 0, .3);
+    transition: all 0.3s ease;
+}
+
+.btn-right:before {
+    height: 0%;
+    width: 2px;
+}
+
+.btn-right:after {
+    width: 0%;
+    height: 2px;
+}
+
+.btn-right:hover {
+    color: rgba(251, 75, 2, 1);
+    background: transparent;
+}
+
+.btn-right:hover:before {
+    height: 100%;
+}
+
+.btn-right:hover:after {
+    width: 100%;
+}
+
+.btn-right span:before,
+.btn-right span:after {
+    position: absolute;
+    content: "";
+    right: 0;
+    top: 0;
+    background: rgba(251, 75, 2, 1);
+    box-shadow: -7px -7px 20px 0px
+    rgba(255, 255, 255, .9), -4px -4px 5px 0px
+    rgba(255, 255, 255, .9), 7px 7px 20px 0px
+    rgba(0, 0, 0, .2), 4px 4px 5px 0px
+    rgba(0, 0, 0, .3);
+    transition: all 0.3s ease;
+}
+
+.btn-right span:before {
+    width: 2px;
+    height: 0%;
+}
+
+.btn-right span:after {
+    height: 2px;
+    width: 0;
+}
+
+.btn-right span:hover:before {
+    height: 100%;
+}
+
+.btn-right span:hover:after {
+    width: 100%;
+}
+
+.btn-link {
+    text-decoration: none;
+    color: #000;
+}

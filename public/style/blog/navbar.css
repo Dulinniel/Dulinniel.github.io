@@ -1,0 +1,49 @@
+:root {
+  background-color: #333;
+}
+
+body {
+  font-size: 20px;
+  color: #fff;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #000;
+  
+}
+
+p {
+  color: black;
+  text-decoration: underline
+}
+
+li a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #383e42;
+}
+
+.active {
+  background-color: #FA5F55;
+}
+
+.header {
+  height: 300px;
+  text-align: center;
+  display: block;
+  padding-top: 10%;
+  background: linear-gradient(black, #000099, #66c2ff, #ffcccc, #ffeee6);
+  width: 100%;
+}
+

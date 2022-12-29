@@ -1,0 +1,27 @@
+article > p {
+  text-decoration: none;
+}
+
+article > p, h2 {
+  text-align: center;
+}
+
+.posts {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-gap: 15px;
+  position: relative;
+  left: 0.1%
+}
+
+.post {
+  background-color: #fff;
+  width: 1fr;
+  height: 200px;
+}
+
+.post:hover { 
+  box-shadow: 10px 5px 5px black;
+  cursor: pointer;
+}

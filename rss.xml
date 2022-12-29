@@ -1,0 +1,10 @@
+<rss>
+  <channel>
+    <title>Blog posts</title>
+    <item>
+			<link>https://nervuwus.github.io/</link>
+      <title>A fancy test</title>
+      <description>Lorem ipsom</description>
+    </item>
+  </channel>
+</rss>
