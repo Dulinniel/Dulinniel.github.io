@@ -1,11 +1,11 @@
 @media only screen and (max-width: 439px) {
   :root {
-    --gap: 10%;
+    --gap: 1%;
     --size: 200px;
     --body-top: 4%;
     --container-size: 350px;
     --dialogbox-width: 60%;
-	--progress: 5em;
+	  --progress: 5em;
   }
 }
 
