@@ -1,11 +1,11 @@
 /* TEAM */
 
-Pseudo: Nervous Nightingale
+Pseudo: Dulinniel
 Name: Riley
 Email: nightingalenervous[at]gmail.com
 Location: France
 GpG key: F0A911454C598AC0D7391E723E13356C1F9E3A1F
-GitHub: https://github.com/nervuwus
+GitHub: https://github.com/dulinniel
 
 /* SITE */
 
@@ -13,4 +13,4 @@ Last Update: 2022/9/25
 Language: Français / English
 Standards: HTML5, CSS3, ECMASCRIPT 6
 Software: Vim, Gimp
-Repo: https://github.com/nervuwus/nervuwus.github.io
+Repo: https://github.com/dulinniel/dulinniel.github.io
