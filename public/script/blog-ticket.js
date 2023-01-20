@@ -24,14 +24,12 @@ window.addEventListener("load", async () => {
 			let html = '';
 			items.forEach(el => {
 				console.log(el);
-				html += `<div class="posts">
-									<article class="post">
+				html += `<article class="post">
 										<h2><a href="${el.querySelector("link").innerHTML}" target="_blank" rel="noopenner">
 											${el.querySelector("title").innerHTML}
 								 		</a></h2>
 										<p>${el.querySelector("description").innerHTML}</p>
-								 	</article>
-								</div>`;
+								 	</article>`;
 			});
 			blogContainer.insertAdjacentHTML("beforeend", html);
 		})

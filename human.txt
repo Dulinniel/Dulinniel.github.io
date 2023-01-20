@@ -2,10 +2,19 @@
 
 Pseudo: Dulinniel
 Name: Riley
+Discord: Dulinniel#1337
 Email: nightingalenervous[at]gmail.com
 Location: France
 GpG key: F0A911454C598AC0D7391E723E13356C1F9E3A1F
 GitHub: https://github.com/dulinniel
+
+Pseudo: sami.et.un.peu.d.art
+Name: Sam
+Discord: Sam~#0608
+Email: samaelart.pro[at]gmail.com
+Location: France
+Instagram: https://www.instagram.com/sami.et.un.peu.d.art/
+Work: Sam done my profile picture seen at https://rileys-thingies.fr/pages/portfolio
 
 /* SITE */
 
@@ -14,3 +23,6 @@ Language: Français / English
 Standards: HTML5, CSS3, ECMASCRIPT 6
 Software: Vim, Gimp
 Repo: https://github.com/dulinniel/dulinniel.github.io
+Images Source:
+    SVG : https://svgrepo.com
+    Favicon : https://realfavicongenerator.net/

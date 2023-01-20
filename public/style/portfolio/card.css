@@ -54,7 +54,7 @@ th, td {
     width: var(--size);
     height: var(--size);
 
-    background-image: url("../../ressource/images/miku.png"),
+    background-image: url("../../ressource/images/dulinniel.png"),
         linear-gradient(180deg, #fe0000 16.66%,
             #fd8c00 16.66%, 33.32%,
             #ffe500 33.32%, 49.98%,
