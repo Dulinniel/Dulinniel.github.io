@@ -1,30 +1,25 @@
-:root {
-  background-color: #333;
-}
-
 body {
-  font-size: 20px;
-  color: #fff;
+  margin: 0;
+  min-height: 300px;
 }
 
 ul {
   list-style-type: none;
-  margin: 0;
+  margin: auto;
   padding: 0;
   overflow: hidden;
   background-color: #000;
-  
 }
 
-p {
-  color: black;
+.header-text {
+  color: #000;
   text-decoration: underline
 }
 
 li a {
   float: left;
   display: block;
-  color: white;
+  color: #fff;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
@@ -40,10 +35,9 @@ li a:hover {
 
 .header {
   height: 300px;
-  text-align: center;
   display: block;
+  text-align: center;
   padding-top: 10%;
-  background: linear-gradient(black, #000099, #66c2ff, #ffcccc, #ffeee6);
-  width: 100%;
+
 }
 

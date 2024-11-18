@@ -1,163 +1,76 @@
-:root {
-  --dialogbox-width: 40%;
+@import url("../variables/typography.css");
+@import url("../variables/colors.css");
+
+/* Styles pour la boîte de dialogue */
+#dialogoverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7); /* Fond sombre semi-transparent */
+  display: none;
+  z-index: 10;
+}
+
+#dialogbox {
+  position: fixed;
+  width: 80%; /* Augmenter la largeur */
+  max-width: 600px; /* Taille maximale sur les grands écrans */
+  background-color: var(--dark-color); /* Fond de la boîte en foncé */
+  color: var(--light-color); /* Texte clair */
+  border: 2px solid var(--accent-color); /* Bordure accentuée */
+  border-radius: 10px;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
+  z-index: 11;
+  display: none;
+  margin: 0 auto; /* Centrer horizontalement */
+  padding: 20px; /* Ajouter de l'espace intérieur */
+}
+
+#dialogboxcontent {
+  padding: 20px;
+  text-align: center;
+}
+
+#dialogboxbody {
+  font-size: var(--font-size-base);
+  line-height: var(--spacing-medium);
+  margin-bottom: 30px;
+}
+
+#dialogboxfoot {
+  text-align: center;
+}
+
+#dialogboxfoot button {
+  background-color: var(--accent-color);
+  color: var(--dark-color);
+  border: none;
+  padding: 12px 25px;
+  border-radius: 5px;
+  cursor: var(--pointer);
+  font-size: var(--font-size-small);
+  transition: background-color 0.3s ease;
+}
+
+#dialogboxfoot button:hover {
+  background-color: var(--primary-color);
+  color: var(--light-color);
+}
+
+/* Animation */
+.slit-in-vertical {
+  animation: slit-in-vertical 0.5s ease-out both;
 }
 
 @keyframes slit-in-vertical {
   0% {
-    transform: translateZ(-800px) rotateY(90deg);
+    transform: translateY(-100%) rotateX(-30deg);
     opacity: 0;
   }
-  54% {
-    transform: translateZ(-160px) rotateY(87deg);
+  100% {
+    transform: translateY(0) rotateX(0);
     opacity: 1;
   }
-  100% {
-    transform: translateZ(0) rotateY(0);
-  }
-}
-
-.slit-in-vertical {
-	animation: slit-in-vertical 0.3s ease-out both;
-}
-
-#dialogoverlay{
-  display: none;
-  opacity: .8;
-  position: fixed;
-  top: 0px;
-  left: 0px;
-  width: 100%;
-  z-index: 10;
-}
-
-#dialogbox{
-  display: none;
-  position: absolute;
-  background: rgb(28, 148, 40);
-  border-radius: 7px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.575);
-  transition: 0.3s;
-  width: var(--dialogbox-width);
-  z-index: 10;
-  top: 0;
-  left: 0;
-  right: 0;
-  margin: auto;
-}
-
-#dialogbox:hover {
-  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.911);
-}
-
-#dialogbox > div {
-  background: #fff;
-  margin: 8px
-}
-
-#dialogbox > div > #dialogboxbody {
-  background: rgb(28, 148, 40);
-  padding: 20px;
-  color: #fff;
-  font-family: sans-serif;
-  text-align: justify;
-}
-
-#dialogbox > div > #dialogboxfoot{
-  background: rgb(28, 148, 40);
-  padding: 10px;
-  text-align: right;
-}
-
-.accept {
-  position: relative;
-  display: inline-block;
-  box-sizing: border-box;
-  border: none;
-  border-radius: 4px;
-  padding: 0 16px;
-  min-width: 64px;
-  height: 36px;
-  vertical-align: middle;
-  text-align: center;
-  text-overflow: ellipsis;
-  text-transform: uppercase;
-  color: #fff;
-  background-color: rgb(1, 47, 61);
-  box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
-  font-family: sans-serif;
-  font-size: 14px;
-  font-weight: 500;
-  line-height: 36px;
-  overflow: hidden;
-  outline: none;
-  cursor: pointer;
-  transition: box-shadow 0.2s;
-}
-
-.accept::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background-color: #fff;
-  opacity: 0;
-  transition: opacity 0.2s;
-}
-
-.accept::after {
-  content: "";
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  border-radius: 50%;
-  padding: 50%;
-  width: 32px;
-  height: 32px;
-  background-color: #fff;
-  opacity: 0;
-  transform: translate(-50%, -50%) scale(1);
-  transition: opacity 1s, transform 0.5s;
-}
-
-.accept:hover, .accept:focus {
-  box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.2), 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12);
-}
-
-.accept:hover::before {
-  opacity: 0.08;
-}
-
-.accept:focus::before {
-  opacity: 0.024;
-}
-
-.accept:hover:focus::before {
-  opacity: 0.3;
-}
-
-.accept:active {
-  box-shadow: 0 5px 5px -3px rgba(0, 0, 0, 0.2), 0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12);
-}
-
-.accept:active::after {
-  opacity: 0.32;
-  transform: translate(-50%, -50%) scale(0);
-  transition: transform 0s;
-}
-
-.accept:disabled {
-  color: #000;
-  background-color: #000;
-  box-shadow: none;
-  cursor: initial;
-}
-
-.accept:disabled::before {
-  opacity: 0;
-}
-
-.accept:disabled::after {
-  opacity: 0;
 }

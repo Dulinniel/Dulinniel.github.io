@@ -1,0 +1,5 @@
+:root
+{
+  --pointer: url("../../ressource/cursors/pointer.cur"), pointer;
+  --default: url("../../ressource/cursors/base.cur"), default;
+}

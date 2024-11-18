@@ -1,0 +1,32 @@
+.introduction-title {
+  color: #000;
+}
+
+.introduction {
+  color: #000;
+  text-align: justify;
+  line-height: 2.5vh;
+}
+
+.me {
+  padding-left: 15%;
+  padding-top: 5%;
+}
+
+.logo {
+  float: left;
+  height: 20vw;
+}
+
+.block-text {
+  float: left;
+  width: 80%;
+}
+
+.header * {
+  color: #fff;
+}
+
+span.emphase {
+  font-style: italic;
+}

@@ -2,27 +2,28 @@
 
 Pseudo: Dulinniel
 Name: Riley
-Discord: Dulinniel#1337
-Email: nightingalenervous[at]gmail.com
+Discord: dulinniel1337
+Email: riley.dsv[at]gmail.com
 Location: France
-GpG key: F0A911454C598AC0D7391E723E13356C1F9E3A1F
 GitHub: https://github.com/dulinniel
-
-Pseudo: sami.et.un.peu.d.art
-Name: Sam
-Discord: Sam~#0608
-Email: samaelart.pro[at]gmail.com
-Location: France
-Instagram: https://www.instagram.com/sami.et.un.peu.d.art/
-Work: Sam done my profile picture seen at https://rileys-thingies.fr/pages/portfolio
 
 /* SITE */
 
-Last Update: 2022/9/25
-Language: Français / English
-Standards: HTML5, CSS3, ECMASCRIPT 6
-Software: Vim, Gimp
+Last Update: 2024/11/18
+Language: Français
+Standards: HTML5, CSS3, Javascript
+Software: Vim, Sublime Text, Gimp
 Repo: https://github.com/dulinniel/dulinniel.github.io
 Images Source:
     SVG : https://svgrepo.com
     Favicon : https://realfavicongenerator.net/
+
+/* FRIENDS */
+
+Pseudo: chat.d.encre
+Name: Sam
+Discord: samael_chat.d.encre
+Email: samaelart.pro[at]gmail.com
+Location: France
+Instagram: https://www.instagram.com/chat.d.encre/
+Work: Sam done my profile picture of my github (https://github.com/dulinniel)
