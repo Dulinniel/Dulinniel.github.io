@@ -2,14 +2,14 @@
 @import url("../variables/cursors.css");
 @import url("../variables/typography.css");
 
-.container {
-  display: flex;
-  gap: 35%;
-  justify-content: center;
+.container { 
+  display: inline-grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 50px;
 }
 
 .btn {
-  padding: 15px 25px;
+  padding: 20px 25px;  
   border: 2px solid var(--accent-color);
   background-color: transparent;
   color: var(--accent-color);
