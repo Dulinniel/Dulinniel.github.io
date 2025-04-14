@@ -1,4 +1,2 @@
 User-agent: *
-Disallow: public/
-Disallow: pages/blog.html
-Disallow: pages/portfolio.html
+

@@ -21,7 +21,7 @@ document.addEventListener("keydown", ( event ) =>
     [...document.getElementsByTagName('link')].forEach(css => {
       css.rel.disabled = true;
     });
-    loadCSS('../public/style/alternate/index.css');
+    loadCSS('src/style/alternate/index.css');
 
   }
 

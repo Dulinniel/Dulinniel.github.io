@@ -10,9 +10,9 @@
   <link rel="canonical" href="https://dulinniel.github.io/">
   <link rel="sitemap" href="sitemap.xml">
   <link rel="author" href="human.txt">
-  <link rel="stylesheet" type="text/css" href="public/style/main/index.css">
-  <link rel="stylesheet" type="text/css" href="public/style/components/button.css">
-  <link rel="stylesheet" type="text/css" href="public/style/components/alert.css">
+  <link rel="stylesheet" type="text/css" href="./src/style/main/index.css">
+  <link rel="stylesheet" type="text/css" href="./src/style/components/button.css">
+  <link rel="stylesheet" type="text/css" href="./src/style/components/alert.css">
   <!-- Allow user to add app on the screen -->
   <meta name='mobile-web-app-capable' content='yes'>
   <meta name='apple-mobile-web-app-capable' content='yes'>
@@ -35,8 +35,8 @@
   <meta name="theme-color" content="#DA70D6">
   <meta name="og:url" content="https://dulinniel.github.io/">
   <!-- Add OG properties -->
-  <script src="public/script/key-check.js" defer></script>
-  <script src="public/script/alert.js" defer></script>
+  <script src="src/script/key-check.js" defer></script>
+  <script src="src/script/alert.js" defer></script>
 </head>
 
 <body>
@@ -45,16 +45,15 @@
   <p>Développeuse et rôliste avec beaucoup trop d'imagination</p>
 
   <figures class="social-container">
-    <a href="https://github.com/Dulinniel" target="_blank" rel="noreferrer"><img class="available" src="./public/ressource/images/github-svgrepo-com.svg" alt="Logo github"/></a>
-    <a href="https://www.youtube.com/channel/UCTnYbWRDhPrC_FEICHDCX7A" target="_blank" rel="noreferrer"><img class="available" src="./public/ressource/images/youtube-svgrepo-com.svg" alt="Logo youtube"/></a>
+    <a href="https://github.com/Dulinniel" target="_blank" rel="noreferrer"><img class="available" src="./ressource/images/github-svgrepo-com.svg" alt="Logo github"/></a>
     <button class="available" onclick="copyTag() " onkeydown="handleKeydown()" aria-label="Copier le tag Discord">
-      <img src="./public/ressource/images/discord-svgrepo-com.svg" alt="Logo Discord" />
+      <img src="./ressource/images/discord-svgrepo-com.svg" alt="Logo Discord" />
     </button>
   </figures>
 
   <nav class="container">
     <button class="btn btn-left" onclick="location.href = '#';">
-      <span><a class="btn-link" href="#">Blog</a></span>
+      <span><a class="btn-link" href="pages/blog.html">Blog</a></span>
     </button>
     <button class="btn btn-right" onclick="location.href = '#';">
       <span><a class="btn-link" href="#">Portfolio</a></span>

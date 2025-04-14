@@ -1,6 +1,6 @@
-function customAlert() {
-  this.alert = (message) => {
-    // Crée le contenu HTML de la boîte de dialogue
+class customAlert {
+  alert(message) {
+    // Create some HTML Content
     const dialogHTML = `
       <div id="dialogoverlay"></div>
       <div id="dialogbox" class="slit-in-vertical">
@@ -14,19 +14,19 @@ function customAlert() {
     `;
     document.body.insertAdjacentHTML("afterbegin", dialogHTML);
 
-    // Gestion de l'affichage de la boîte de dialogue
+    // Handle the newly created elements
     const dialogoverlay = document.getElementById("dialogoverlay");
     const dialogbox = document.getElementById("dialogbox");
 
     dialogoverlay.style.display = "block";
     dialogbox.style.display = "block";
 
-    // Centrage vertical
+    // center
     dialogbox.style.top = '40%';
   }
 
-  this.ok = () => {
-    // Masquer la boîte de dialogue
+  ok() {
+    // hide everything
     document.getElementById("dialogbox").style.display = "none";
     document.getElementById("dialogoverlay").style.display = "none";
   }
@@ -35,20 +35,22 @@ function customAlert() {
 const Alert = new customAlert();
 
 function copyTag() {
-  // Utiliser l'API Clipboard pour copier le texte
+  // Use this clipboard API to put my tag in it
   navigator.clipboard.writeText("dulinniel1337").then(() => {
-    // Afficher une alerte personnalisée après la copie
+    // Display the alert 
     Alert.alert("Mon tag dulinniel1337 s'est glissé dans ton presse-papier :D</br></br>( Je détèste le fait qu'ils aient retiré les discriminateurs )");
   }).catch(err => {
     console.error("Erreur lors de la copie : ", err);
   });
 }
 
-// Fonction pour gérer les interactions au clavier
+// Handle IRQ 
 function handleKeydown(event) {
-  // Vérifie si la touche appuyée est Enter ou Space
+  // Add some accessibility options 
   if (event.key === "Enter" || event.key === " ") {
-    event.preventDefault(); // Empêche le scroll pour Space
-    copyTag(); // Appelle la fonction de copie
+    // Dissable scrolling with space
+    event.preventDefault();
+    // Call for copy function
+    copyTag();
   }
 }

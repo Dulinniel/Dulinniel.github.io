@@ -3,7 +3,7 @@ body {
   min-height: 300px;
 }
 
-ul {
+#arianne {
   list-style-type: none;
   margin: auto;
   padding: 0;
@@ -30,7 +30,8 @@ li a:hover {
 }
 
 .active {
-  background-color: #FA5F55;
+  color: #000;
+  background-color: #F86C62;
 }
 
 .header {

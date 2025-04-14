@@ -9,10 +9,10 @@ GitHub: https://github.com/dulinniel
 
 /* SITE */
 
-Last Update: 2024/11/18
+Last Update: 2025/04/14
 Language: Français
 Standards: HTML5, CSS3, Javascript
-Software: Vim, Sublime Text, Gimp
+Software: nvim, Gimp
 Repo: https://github.com/dulinniel/dulinniel.github.io
 Images Source:
     SVG : https://svgrepo.com

@@ -8,14 +8,14 @@
     <title>Riley's thingy - Blog</title>
     <link rel="canonical" href="https://rileys-thingies.fr/pages/blog">
     <link rel="shortcut icon" href="../public/ressource/images/favicon/favicon.ico">
-    <!-- Import proper CSS to the file -->
-    <link rel="stylesheet" href="../public/style/responsive/responsive.css">
-    <link rel="stylesheet" href="../public/style/components/navbar.css">
-    <link rel="stylesheet" href="../public/style/blog/posts.css">
-    <link rel="stylesheet" href="../public/style/blog/index.css">
+    <!-- Import proper CSS to the file --> 
+    <link rel="stylesheet" href="../src/style/components/navbar.css">
+    <link rel="stylesheet" href="../src/style/components/background.css">
+    <link rel="stylesheet" href="../src/style/blog/posts.css">
+    <link rel="stylesheet" href="../src/style/variables/colors.css" >
+    <link rel="stylesheet" href="../src/style/variables/cursors.css">
     <!-- Import Proper CSS to the file -->
     <!-- Import Script file -->
-    <script rel="script" type="text/javascript" src="../public/script/blog-ticket.js" defer></script>
     <!-- Import Script file -->
     <!-- Add OG properties -->
     <meta property="og:title" content="Riley's Blog">
@@ -25,20 +25,22 @@
     <meta name="theme-color" content="#DA70D6">  
     <meta name="og:url" content="https://rileys-thingies.fr/pages/blog.html">
     <!-- Add OG properties -->
+    <script type="module" src=../src/script/PostManager.js defer></script> 
   </head>
   <body>
-    <div class="header">
-      <h2>Riley's Blog</h2>
-      <p>Mon blog, je parle d'à peu près tout dessus, que ce soit de tech, de nourriture ou de sujet autres<p>
-    </div>
-    <ul>
+    <header class="header">
+      <h1>Riley's Blog</h1>
+      <p>Mon blog, je parle d'à peu près tout dessus. C'est mon blog.<p>
+    </header>
+    <ul id=arianne>
       <li><a class="active" href="../">Home</a></li>
       <li><a href="../portfolio">Portfolio</a></li>
       <li><a href="#">About</a></li>
     </ul>
-    <h3>Mes derniers article:</h3>
-    <div>
-      <div id="blog-container" class="posts"></div>
-    </div>
+    <h2>Mes derniers article:</h2>
+    <main class="container">
+      <nav class="btn" id="posts"></nav>
+      <article id=blog-container></article>
+    </main>
   </body>
 </html>
