@@ -1,0 +1,90 @@
+@import url("../variables/typography.css");
+@import url("../variables/cursors.css");
+@import url("../variables/colors.css");
+
+:root {
+  cursor: var(--default);
+  --dialogbox-width: 40%;
+  --gap: 50%;
+}
+
+body {
+  font-family: var(--font-family-main);
+  background-color: var(--dark-color);
+  color: var(--light-color);
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  text-align: center;
+  overflow: hidden;
+}
+
+h1 {
+  font-size: var(--font-size-large);
+  color: var(--primary-color);
+  margin-bottom: 0.2em;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+p {
+  font-size: var(--font-size-base);
+  color: var(--accent-color);
+  margin-bottom: 3em;
+  font-style: italic;
+}
+
+a {
+  cursor: var(--pointer);
+}
+
+.social-container {
+  display: flex;
+  justify-content: center;
+  gap: var(--gap);
+  margin-bottom: 3em;
+}
+
+.social-container img {
+  width: 30px;
+  height: 30px;
+  opacity: 0.8;
+  filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(100%) contrast(100%);
+  transition: opacity 0.3s, transform 0.3s;
+}
+
+.social-container img:hover {
+  opacity: 1;
+  transform: translateY(-5px);
+}
+
+.available:hover {
+  cursor: var(--pointer);
+}
+
+/* Styles pour annuler l'apparence du bouton */
+button.available {
+  background: none;
+  border: none;
+  padding: 0;
+  margin: 0;
+  cursor: var(--pointer);
+  outline: none;
+  display: inline-block;
+}
+
+/* Ajouter un focus visible pour l'accessibilité */
+button.available:focus {
+  outline: 2px solid var(--accent-color); 
+}
+
+/* Ajuster explicitement la taille du logo Discord */
+button.available img {
+  width: 30px;  /* Ajuster selon la taille désirée */
+  height: 30px; /* Taille fixe pour garder les proportions */
+  display: block;
+}

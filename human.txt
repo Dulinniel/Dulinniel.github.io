@@ -1,0 +1,29 @@
+/* TEAM */
+
+Pseudo: Dulinniel
+Name: Riley
+Discord: dulinniel1337
+Email: riley.dsv[at]gmail.com
+Location: France
+GitHub: https://github.com/dulinniel
+
+/* SITE */
+
+Last Update: 2025/04/14
+Language: Français
+Standards: HTML5, CSS3, Javascript
+Software: nvim, Gimp
+Repo: https://github.com/dulinniel/dulinniel.github.io
+Images Source:
+    SVG : https://svgrepo.com
+    Favicon : https://realfavicongenerator.net/
+
+/* FRIENDS */
+
+Pseudo: chat.d.encre
+Name: Sam
+Discord: samael_chat.d.encre
+Email: samaelart.pro[at]gmail.com
+Location: France
+Instagram: https://www.instagram.com/chat.d.encre/
+Work: Sam done my profile picture of my github (https://github.com/dulinniel)

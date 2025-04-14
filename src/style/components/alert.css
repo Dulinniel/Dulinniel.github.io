@@ -1,0 +1,76 @@
+@import url("../variables/typography.css");
+@import url("../variables/colors.css");
+
+/* Styles pour la boîte de dialogue */
+#dialogoverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7); /* Fond sombre semi-transparent */
+  display: none;
+  z-index: 10;
+}
+
+#dialogbox {
+  position: fixed;
+  width: 80%; /* Augmenter la largeur */
+  max-width: 600px; /* Taille maximale sur les grands écrans */
+  background-color: var(--dark-color); /* Fond de la boîte en foncé */
+  color: var(--light-color); /* Texte clair */
+  border: 2px solid var(--accent-color); /* Bordure accentuée */
+  border-radius: 10px;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
+  z-index: 11;
+  display: none;
+  margin: 0 auto; /* Centrer horizontalement */
+  padding: 20px; /* Ajouter de l'espace intérieur */
+}
+
+#dialogboxcontent {
+  padding: 20px;
+  text-align: center;
+}
+
+#dialogboxbody {
+  font-size: var(--font-size-base);
+  line-height: var(--spacing-medium);
+  margin-bottom: 30px;
+}
+
+#dialogboxfoot {
+  text-align: center;
+}
+
+#dialogboxfoot button {
+  background-color: var(--accent-color);
+  color: var(--dark-color);
+  border: none;
+  padding: 12px 25px;
+  border-radius: 5px;
+  cursor: var(--pointer);
+  font-size: var(--font-size-small);
+  transition: background-color 0.3s ease;
+}
+
+#dialogboxfoot button:hover {
+  background-color: var(--primary-color);
+  color: var(--light-color);
+}
+
+/* Animation */
+.slit-in-vertical {
+  animation: slit-in-vertical 0.5s ease-out both;
+}
+
+@keyframes slit-in-vertical {
+  0% {
+    transform: translateY(-100%) rotateX(-30deg);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0) rotateX(0);
+    opacity: 1;
+  }
+}

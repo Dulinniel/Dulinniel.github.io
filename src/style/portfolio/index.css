@@ -1,0 +1,18 @@
+:root {
+  font-family: Helvetica
+}
+
+section {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  padding-top: 5%;
+}
+
+a {
+  color: #33a8d6
+}
+
+a:hover {
+  cursor: url("../../ressource/cursors/pointer.cur"), pointer;
+}
