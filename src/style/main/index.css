@@ -1,7 +1,3 @@
-@import url("../variables/typography.css");
-@import url("../variables/cursors.css");
-@import url("../variables/colors.css");
-
 :root {
   cursor: var(--default);
   --dialogbox-width: 40%;

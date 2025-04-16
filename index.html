@@ -13,6 +13,9 @@
   <link rel="stylesheet" type="text/css" href="./src/style/main/index.css">
   <link rel="stylesheet" type="text/css" href="./src/style/components/button.css">
   <link rel="stylesheet" type="text/css" href="./src/style/components/alert.css">
+  <link rel="stylesheet" type="text/css" href="./src/style/variables/colors.css">
+  <link rel="stylesheet" type="text/css" href="./src/style/variables/cursors.css">
+  <link rel="stylesheet" type="text/css" href="./src/style/variables/typography.css">
   <!-- Allow user to add app on the screen -->
   <meta name='mobile-web-app-capable' content='yes'>
   <meta name='apple-mobile-web-app-capable' content='yes'>
@@ -28,9 +31,9 @@
   <meta name="msapplication-config" content="browserconfig.xml">
   <!-- Ahah yes, favicon and other manifests shit -->
   <!-- Add OG properties -->
-  <meta property="og:title" content="Riley's thingy">
+  <meta property="og:title" content="Riley's stuff">
   <meta name="og:type" content="website">
-  <meta name="og:description" content="This is a little blog where you can find articles, reviews, projects and... random shit">
+  <meta name="og:description" content="This is my blog. You can find articles, reviews, projects and... random shit">
   <meta name="og:locale" content="fr_FR">
   <meta name="theme-color" content="#DA70D6">
   <meta name="og:url" content="https://dulinniel.github.io/">
@@ -52,10 +55,10 @@
   </figures>
 
   <nav class="container">
-    <button class="btn btn-left" onclick="location.href = '#';">
+    <button aria-label="Rejoindre le blog" class="btn btn-left" onclick="location.href = './pages/blog.html';">
       <span><a class="btn-link" href="pages/blog.html">Blog</a></span>
     </button>
-    <button class="btn btn-right" onclick="location.href = '#';">
+    <button aria-label="Rejoindre le portfolio (inaccessible)" class="btn btn-right" onclick="location.href = '#';">
       <span><a class="btn-link" href="#">Portfolio</a></span>
     </button>
   </nav>

@@ -9,12 +9,23 @@ fetch("/index.json")
   .then(res => res.json())
   .then(posts => {
     posts.forEach(post => {
+      const fragment = document.createDocumentFragment();
       const button = document.createElement("button");
-      button.textContent = post.title;
+      button.textContent = "Lire";
+      button.name = "open";
       button.addEventListener("click", () => { 
         loadPost(post.file);
       });
-      posts_list.appendChild(button);
+
+      const post_card = fragment
+        .appendChild(Object.assign( 
+          document.createElement("section"), { className: "post" } )
+        )
+        .appendChild(Object.assign(
+          document.createElement("h2"), { className: "post-title", textContent: post.title } )
+        );
+      post_card.insertAdjacentElement("afterend", button);
+      posts_list.appendChild(fragment);
     });
   });
 
@@ -29,3 +40,4 @@ function loadPost(file)
       });
     });
 }
+

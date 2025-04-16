@@ -1,6 +1,3 @@
-@import url("../variables/typography.css");
-@import url("../variables/colors.css");
-
 /* Styles pour la boîte de dialogue */
 #dialogoverlay {
   position: fixed;

@@ -9,7 +9,7 @@ GitHub: https://github.com/dulinniel
 
 /* SITE */
 
-Last Update: 2025/04/14
+Last Update: 2025/04/16
 Language: Français
 Standards: HTML5, CSS3, Javascript
 Software: nvim, Gimp
