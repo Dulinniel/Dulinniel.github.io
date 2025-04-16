@@ -1,7 +1,3 @@
-@import url("../variables/colors.css");
-@import url("../variables/cursors.css");
-@import url("../variables/typography.css");
-
 .container { 
   display: inline-grid;
   grid-template-columns: 1fr 1fr;
